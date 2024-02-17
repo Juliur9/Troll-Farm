@@ -7,8 +7,6 @@ public class ObjectInteraction : MonoBehaviour
     public Transform transformcamera;
 
     // Das Tag des Objekts, das aufgehoben werden soll
-    public string objectTag = "Interactable";
-
     void Update()
     {
         // Wenn die linke Maustaste gedrückt wird
@@ -35,7 +33,7 @@ public class ObjectInteraction : MonoBehaviour
 
     if (Physics.Raycast(ray, out hit))
     {
-        if (hit.collider.gameObject.CompareTag(objectTag))
+        if (hit.collider.gameObject.CompareTag("Kohl") || hit.collider.gameObject.CompareTag("Tomate"))
         {   
             grabbedObject = hit.collider.gameObject;
             grabbedObject.GetComponent<Rigidbody>().isKinematic = true;

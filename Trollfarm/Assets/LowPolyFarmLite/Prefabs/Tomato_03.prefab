@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7487456116394265693}
   m_Layer: 6
   m_Name: Tomato_03_LOD0
-  m_TagString: Interactable
+  m_TagString: Tomate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 720977957349680984}
   m_Layer: 6
   m_Name: Tomato_03_LOD1
-  m_TagString: Untagged
+  m_TagString: Tomate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 4977396707130513252}
   m_Layer: 6
   m_Name: Tomato_03
-  m_TagString: Interactable
+  m_TagString: Tomate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

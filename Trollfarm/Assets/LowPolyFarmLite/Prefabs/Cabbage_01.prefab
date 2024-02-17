@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8446973881879383255}
   m_Layer: 6
   m_Name: Cabbage_01_LOD1
-  m_TagString: Untagged
+  m_TagString: Kohl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 8373419051993004191}
   m_Layer: 6
   m_Name: Cabbage_01_LOD0
-  m_TagString: Interactable
+  m_TagString: Kohl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 9165021386724120487}
   m_Layer: 6
   m_Name: Cabbage_01
-  m_TagString: Interactable
+  m_TagString: Kohl
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
