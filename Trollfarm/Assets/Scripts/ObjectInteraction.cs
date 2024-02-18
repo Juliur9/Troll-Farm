@@ -8,11 +8,10 @@ public class ObjectInteraction : MonoBehaviour
     public Transform türtroller;
     public int coins;
 
-    // Das Tag des Objekts, das aufgehoben werden soll
     void Update()
     {
         // Wenn die linke Maustaste gedrückt wird
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0))
         {   
             // Wenn nicht bereits ein Objekt aufgehoben wird
             if (!isGrabbing)
@@ -53,12 +52,11 @@ public class ObjectInteraction : MonoBehaviour
     RaycastHit hit;
     Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
     
-    if (Physics.Raycast(ray, out hit))
+    if (Physics.Raycast(ray, out hit, 1.5f))
     {   
         
         if (hit.collider.gameObject.CompareTag("Kohl") || hit.collider.gameObject.CompareTag("Tomate"))
         {   
-            Debug.Log(hit.collider.gameObject.name);
             grabbedObject = hit.collider.gameObject;
             grabbedObject.GetComponent<Rigidbody>().isKinematic = true;
             isGrabbing = true;
