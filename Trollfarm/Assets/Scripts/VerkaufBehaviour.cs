@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class VerkaufBehaviour : MonoBehaviour
 {   
-    public static int coins = -2;
+    public ObjectInteraction objecti;
     public string mytag;
+    [SerializeField] private int coinsperveg; 
     private void OnTriggerEnter(Collider other) {
         
         if (mytag == other.gameObject.tag){
-            coins += 1;
+            objecti.coins += coinsperveg;
             Destroy(other);
         }
     }
