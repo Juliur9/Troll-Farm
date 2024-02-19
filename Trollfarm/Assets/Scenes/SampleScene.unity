@@ -3333,8 +3333,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.5
+  m_Color: {r: 0.98735577, g: 1, b: 0.8443396, a: 1}
+  m_Intensity: 0.7
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -14063,7 +14063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de6024309f02d739aade262e576e978a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotatespeed: 250
+  rotatespeed: 100
   movespeed: 3
   rb: {fileID: 1640158651}
   transformcamera: {fileID: 330585546}
