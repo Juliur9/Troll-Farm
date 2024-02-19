@@ -25,7 +25,7 @@ public class ObjectInteraction : MonoBehaviour
                 DropObject();
             }
         }
-        if (coins >= 10)
+        if (coins >= 20)
         {
             LookforDoor();
         }

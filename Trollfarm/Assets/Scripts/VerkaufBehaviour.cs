@@ -9,7 +9,6 @@ public class VerkaufBehaviour : MonoBehaviour
         
         if (mytag == other.gameObject.tag){
             objecti.coins += coinsperveg;
-            Debug.Log(other.gameObject);
             Destroy(other.gameObject);
         }
     }
