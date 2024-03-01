@@ -7,7 +7,7 @@ public class ButtonTroller : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("RandomizePosition", 0f, 0.5f); // Die Position alle 0.5 Sekunden aktualisieren
+        InvokeRepeating("RandomizePosition", 0f, 0.8f); // Die Position alle 0.8 Sekunden aktualisieren
     }
 
     void RandomizePosition()

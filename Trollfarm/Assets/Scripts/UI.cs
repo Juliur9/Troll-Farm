@@ -6,23 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour
 {   
-    public GameObject[] UIElement;
     public void PlayAgain()
     {   
-        for (int i = 0; i < UIElement.Length; i++)
-        {
-            UIElement[i].SetActive(false);
-            SceneManager.LoadScene(0);
-        }
+        SceneManager.LoadScene(1);
+        Cursor.lockState = CursorLockMode.Locked; // Mauszeiger sperren
+        Cursor.visible = false; // Mauszeiger ausblenden
+        
         
     }
     private void OnTriggerEnter(Collider other)
     {   
-        for (int i = 0; i < UIElement.Length; i++)
-        {
-        UIElement[i].SetActive(true);
-        Cursor.lockState = CursorLockMode.None; // Mauszeiger sperren
+        SceneManager.LoadScene(0);
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        }
     }    
 }

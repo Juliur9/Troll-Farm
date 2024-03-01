@@ -13,12 +13,6 @@ public class Movement : MonoBehaviour
     [SerializeField] private Transform transformcamera;
 
     private float cameraRotationX = 0f;
- 
-    void Start()
-{
-    Cursor.lockState = CursorLockMode.Locked; // Mauszeiger sperren
-    Cursor.visible = false; // Mauszeiger ausblenden     
-}
 void Update()
     {   
 
