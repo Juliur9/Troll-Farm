@@ -3,7 +3,7 @@ using UnityEngine;
 public class ObjectInteraction : MonoBehaviour
 {
     private GameObject grabbedObject;
-    private bool isGrabbing = false;
+    public bool isGrabbing = false;
     public Transform transformcamera;
     public Transform türtroller;
     public int coins;

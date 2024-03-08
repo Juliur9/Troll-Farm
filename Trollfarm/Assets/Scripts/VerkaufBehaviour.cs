@@ -7,7 +7,7 @@ public class VerkaufBehaviour : MonoBehaviour
     public string mytag;
     [SerializeField] private int coinsperveg; 
     private void OnTriggerEnter(Collider other) {
-        
+        if (objecti.isGrabbing) return;
         if (mytag == other.gameObject.tag){
             objecti.coins += coinsperveg;
             Destroy(other.gameObject);
